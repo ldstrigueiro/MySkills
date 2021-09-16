@@ -1,4 +1,4 @@
-package com.example.lucasdilanintertest.di
+package com.example.myskills.di
 
 import org.koin.dsl.module
 

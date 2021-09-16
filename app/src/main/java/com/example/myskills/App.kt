@@ -1,11 +1,13 @@
-package com.example.lucasdilanintertest
+package com.example.myskills
 
 import android.app.Application
-import com.example.lucasdilanintertest.di.repositoryModule
-import com.example.lucasdilanintertest.di.viewModelModule
+import com.example.myskills.di.apiModule
+import com.example.myskills.di.repositoryModule
+import com.example.myskills.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext.startKoin
+import retrofitModule
 
 class App: Application() {
 
@@ -22,7 +24,9 @@ class App: Application() {
             androidContext(this@App)
             modules(listOf(
                 viewModelModule,
-                repositoryModule
+                apiModule,
+                repositoryModule,
+                retrofitModule
             ))
         }
     }

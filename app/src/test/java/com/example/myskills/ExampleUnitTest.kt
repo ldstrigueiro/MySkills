@@ -1,4 +1,4 @@
-package com.example.lucasdilanintertest
+package com.example.myskills
 
 import org.junit.Test
 
